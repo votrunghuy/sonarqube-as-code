@@ -24,8 +24,7 @@ def Create_Quality_Gates():
         Name_Quality_Gates = separator.join(Quality_Gates.keys())
         if Name_Quality_Gates not in Get_Quality_Gates_Already():
             Result = sonar.qualitygates.create_quality_gate(name=Name_Quality_Gates)
-            sonar.qualitygates.create_condition_to_quality_gate(gateId=6, metric="new_coverage", error="80", op="LT")
-
+    
 def Delete_Quality_Gates():
     data = Open_File_Config()
     separator = ' '
@@ -37,7 +36,6 @@ def Delete_Quality_Gates():
         if Quality_Gates not in List_Quality_Created:
             Result = sonar.qualitygates.delete_quality_gate(Dict_Quality_Gates_Already[Quality_Gates])
             print (Result)
-def 
 if __name__ == "__main__":
     print (Create_Quality_Gates())
     print (Delete_Quality_Gates())
