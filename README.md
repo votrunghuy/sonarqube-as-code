@@ -15,6 +15,7 @@ The current development version is available on `github
    $ git clone https://github.com/shijl0925/python-sonarqube-api.git
    $ cd python-sonarqube-api
    $ sudo python setup.py install
+   
 ############
 Usage
 ############
