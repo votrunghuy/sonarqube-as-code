@@ -1,0 +1,17 @@
+list-quality-gates:
+  - qlg1:
+      - metric:
+          - underscore: 80
+          - lowercase: 50
+  - qlg2:
+      - metric:
+          - underscore: 80
+          - lowercase: 50
+  - qlg3:
+      - metric:
+          - underscore: 80
+          - lowercase: 50
+  - Sonar way:
+      - metric:
+          - underscore: 80
+          - lowercase: 50
