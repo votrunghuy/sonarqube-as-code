@@ -16,24 +16,10 @@ def Create_Quality_Gates():
             print (Result)
 def Delete_Quality_Gates():
     for Quality_Gates in Get_Quality_Gates_Already():
-#        print (Quality_Gates)
         if Quality_Gates not in List_Quality_Gates:
             Result = sonar.qualitygates.delete_quality_gate(Dict_Quality_Gates_Already[Quality_Gates])
             print (Result)
 if __name__ == "__main__":
     print (Create_Quality_Gates())
     print (Delete_Quality_Gates())
-    
-
-#    for Quality_Gates in List_Quality_Gates:
-#        if Quality_Gates in Quality_Gates_Already['name']:
-#            print ("Quality Gates"+ Quality_Gates + "Exits")
-#        else:
-#            sonar.qualitygates.create_quality_gate(name=Quality_Gates)
-#     Quality_Gates_Already['name']
-#print (List_Quality_Gates_Already['qualitygates']['name'])
-#for quality_gate in List_Quality_gates:
-#    sonar.qualitygates.create_quality_gate(name=quality_gate)
-#quality_gates = sonar.qualitygates.get_quality_gates()
-#print (quality_gates['qualitygates'])
 
