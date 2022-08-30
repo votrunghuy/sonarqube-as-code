@@ -7,14 +7,6 @@ Installation
 Use :command:`pip` to install the latest stable version of ``python-sonarqube-api``:
 
    $ sudo pip install --upgrade python-sonarqube-api
-
-The current development version is available on `github
-<https://github.com/shijl0925/python-sonarqube-api>`__. Use :command:`git` and
-:command:`python setup.py` to install it:
-
-   $ git clone https://github.com/shijl0925/python-sonarqube-api.git
-   $ cd python-sonarqube-api
-   $ sudo python setup.py install
    
 ############
 Usage
