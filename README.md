@@ -12,4 +12,22 @@ Use :command:`pip` to install the latest stable version of ``python-sonarqube-ap
 Usage
 ############
 
-ADD quality gates you want create to List_Quality_Gates in files as-code-quality-gates and run CI 
+ADD config to file quality-gates.yaml 
+
+list-quality-gates:
+  - qlg1:
+      - metric:
+          - underscore: 80
+          - lowercase: 50
+  - qlg2:
+      - metric:
+          - underscore: 80
+          - lowercase: 50
+  - qlg3:
+      - metric:
+          - underscore: 80
+          - lowercase: 50
+  - Sonar way:
+      - metric:
+          - underscore: 80
+          - lowercase: 50
